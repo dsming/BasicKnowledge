@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="593.33dp"
+        android:layout_height="320dp"
+        android:background="@drawable/popup_890x480_all_eco"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="40.7dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="29.43dp"
+            android:gravity="center"
+            android:maxWidth="505.2dp"
+            android:text="评分规则"
+            android:textColor="#E6E6E6"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="524dp"
+            android:layout_height="161.33dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="29dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="每日首次启动车辆时，初始驾驶评分为80分，驾驶评分和以下驾驶行为成反比实时变动：1、急加速、急减速、急转弯2、在限速路段的超速行为每日最后熄火前的最终分数将记为当日最终评分"
+            android:textColor="#999999"
+            android:textSize="21.33sp" />
+
+
+        <TextView
+            android:id="@+id/positive"
+            android:layout_width="593.33dp"
+            android:layout_height="66.67dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_890x100_all_nor_eco"
+            android:gravity="center"
+            android:text="关闭"
+            android:textColor="#E6E6E6"
+            android:textSize="21.33dp" />
+
+
+    </LinearLayout>
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:minWidth="260dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:paddingTop="16dp"-->
+<!--        android:background="@drawable/popup_330x260_all_eco"-->
+<!--        android:orientation="vertical">-->
+<!--        <TextView-->
+<!--            android:id="@+id/title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="消息提示"-->
+<!--            android:visibility="visible"-->
+<!--            android:textColor="#333333"-->
+<!--            android:textSize="18sp" />-->
+<!--        <ImageView-->
+<!--            android:id="@+id/image"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:maxHeight="150dp"-->
+<!--            android:maxWidth="150dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:visibility="visible"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/message"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center|left"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:lineSpacingExtra="3dp"-->
+<!--            android:lineSpacingMultiplier="1.2"-->
+<!--            android:textSize="14dp"-->
+<!--            android:textColor="#999999"-->
+<!--            android:text="提示消息提示消息提示消息提示消息提示消息提示消息提示消息提示消息" />-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1px"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:background="#E4E4E4" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/negtive"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:paddingTop="16dp"-->
+<!--                android:paddingBottom="16dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@null"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="No"-->
+<!--                android:textColor="#999999"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/column_line"-->
+<!--                android:layout_width="1px"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#E4E4E4" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/positive"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:paddingTop="16dp"-->
+<!--                android:paddingBottom="16dp"-->
+<!--                android:background="@null"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="Yes"-->
+<!--                android:textColor="#38ADFF"-->
+<!--                android:textSize="16sp" />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+</LinearLayout>
