@@ -121,13 +121,13 @@ public class CommonDialog extends Dialog {
         /**
          * 只显示一个按钮的时候隐藏取消按钮，回掉只执行确定的事件
          */
-        if (isSingle){
-            columnLineView.setVisibility(View.GONE);
-            negtiveBn.setVisibility(View.GONE);
-        }else {
-            negtiveBn.setVisibility(View.VISIBLE);
-            columnLineView.setVisibility(View.VISIBLE);
-        }
+//        if (isSingle){
+//            columnLineView.setVisibility(View.GONE);
+//            negtiveBn.setVisibility(View.GONE);
+//        }else {
+//            negtiveBn.setVisibility(View.VISIBLE);
+//            columnLineView.setVisibility(View.VISIBLE);
+//        }
     }
 
     @Override
@@ -144,7 +144,7 @@ public class CommonDialog extends Dialog {
         titleTv = (TextView) findViewById(R.id.title);
         messageTv = (TextView) findViewById(R.id.message);
         imageIv = (ImageView) findViewById(R.id.image);
-        columnLineView = findViewById(R.id.column_line);
+//        columnLineView = findViewById(R.id.column_line);
     }
 
     /**
