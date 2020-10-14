@@ -24,7 +24,7 @@ public class MainActivity extends BaseActivity {
     private AddDataAdapter addDataAdapter;
     private List<String> addViewed = new ArrayList<>(16);
     private List<String> data = new ArrayList<>(16);
-    int i = 0;
+    int itemIndex = 0;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -41,19 +41,22 @@ public class MainActivity extends BaseActivity {
         addDataAdapter.setAddDataListener(new AddDataAdapter.addDataListener() {
             @Override
             public void onAddDataListener(int position) {
-                if(i < data.size()){
-                    addViewed.add(data.get(i));
+                if(itemIndex < data.size()){
+                    addViewed.add(data.get(itemIndex));
                 }else {
-                    addViewed.add("【下一页5】" + i);
+                    addViewed.add("【下一页5】" + itemIndex);
                 }
                 addDataAdapter.notifyDataSetChanged();
-                i++;
+                itemIndex++;
             }
         });
         addDataAdapter.setLongClickListenerRemove(new AddDataAdapter.longClickListenerRemove() {
             @Override
             public void setLongClickListener(View view) {
                 addViewed.remove(rvAddNewView.getChildLayoutPosition(view));
+                if(addViewed.size()==0){
+                    itemIndex=0;
+                }
                 addDataAdapter.notifyDataSetChanged();
             }
         });
