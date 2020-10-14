@@ -2,116 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E6000000"
     android:gravity="center"
     android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="593.33dp"
-        android:layout_height="320dp"
-        android:background="@drawable/popup_890x480_all_eco"
-        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="40.7dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="29.43dp"
-            android:gravity="center"
-            android:maxWidth="505.2dp"
-            android:text="评分规则"
-            android:textColor="#E6E6E6"
-            android:textSize="24sp" />
-
-
-        <TextView
-            android:id="@+id/message"
-            android:layout_width="524dp"
-            android:layout_height="161.33dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="29dp"
-            android:gravity="center"
-            android:lineSpacingExtra="3dp"
-            android:lineSpacingMultiplier="1.2"
-            android:text="每日首次启动车辆时，初始驾驶评分为80分，驾驶评分和以下驾驶行为成反比实时变动：1、急加速、急减速、急转弯2、在限速路段的超速行为每日最后熄火前的最终分数将记为当日最终评分"
-            android:textColor="#999999"
-            android:textSize="21.33sp" />
-
-
-        <TextView
-            android:id="@+id/positive"
-            android:layout_width="593.33dp"
-            android:layout_height="66.67dp"
-            android:layout_gravity="center"
-            android:background="@drawable/button_890x100_all_nor_eco"
-            android:gravity="center"
-            android:text="关闭"
-            android:textColor="#E6E6E6"
-            android:textSize="21.33dp" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginLeft="20dp"
-        android:layout_width="560dp"
-        android:layout_height="400dp"
-        android:background="@drawable/popup_890x480_all_eco"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="40.7dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="29.43dp"
-            android:gravity="center"
-            android:maxWidth="505.2dp"
-            android:text="成功分享3个文件，1个文件分享失败"
-            android:textColor="#E6E6E6"
-            android:textSize="24sp" />
-
-        <LinearLayout
-            android:layout_width="524dp"
-            android:layout_height="161.33dp"
-            android:layout_marginTop="14.93dp"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:lineSpacingExtra="3dp"
-                android:lineSpacingMultiplier="1.2"
-                android:text="失败文件列表"
-                android:textColor="#E6E6E6"
-                android:textSize="21.33sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:lineSpacingExtra="3dp"
-                android:lineSpacingMultiplier="1.2"
-                android:text="20200929_001_front.mp4 05:08:00"
-                android:textColor="#E6E6E6"
-                android:textSize="21.33sp" />
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="593.33dp"
-            android:layout_height="66.67dp"
-            android:layout_marginTop="86.67dp"
-            android:layout_gravity="center"
-            android:background="@drawable/button_890x100_all_nor_eco"
-            android:gravity="center"
-            android:text="我知道了"
-            android:textColor="#E6E6E6"
-            android:textSize="21.33dp" />
-
-
-    </LinearLayout>
-
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1234" />
 
 
 </LinearLayout>
