@@ -8,7 +8,9 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.basicknowledge.app.AppUtils;
+/**
+ *
+ */
 
 public class BaseActivity extends AppCompatActivity {
     private String TAG=" AppUtils.getAppName(getApplicationContext())+getClass().getSimpleName()";

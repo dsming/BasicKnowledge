@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.basicknowledge.base.BaseActivity;
+import com.example.basicknowledge.mvp_login.ui.LoginActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,7 +66,10 @@ public class MainActivity extends BaseActivity {
             public void setOnItemClickListener(View view, String str) {
                 switch (str){
                     case "CanvasActivity":
-//                        startActivity(new Intent(MainActivity.this,CanvasActivity.class));
+                        startActivity(new Intent(MainActivity.this,CanvasActivity.class));
+                        break;
+                    case "LoginActivity":
+                        startActivity(new Intent(MainActivity.this, LoginActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this,"item 未实现",Toast.LENGTH_SHORT).show();
@@ -90,6 +94,7 @@ public class MainActivity extends BaseActivity {
     }
 
     private void initData() {
+        data.add("LoginActivity");
         data.add("CanvasActivity");
     }
 

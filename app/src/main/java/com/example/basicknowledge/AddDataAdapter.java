@@ -43,12 +43,12 @@ public class AddDataAdapter extends RecyclerView.Adapter<AddDataAdapter.VH> {
     public void onBindViewHolder(@NonNull final VH vh, final int i) {
         if (addViewed.size() != i) {
             vh.tvClickAddTextButton.setText(addViewed.get(i));
-//            vh.tvClickAddTextButton.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    onItemClickListener.setOnItemClickListener(v,addViewed.get(i));
-//                }
-//            });
+            vh.tvClickAddTextButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onItemClickListener.setOnItemClickListener(v,addViewed.get(i));
+                }
+            });
             vh.tvClickAddTextButton.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View v) {
