@@ -1,4 +1,4 @@
-package com.example.basicknowledge;
+package com.example.basicknowledge.custom;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -11,6 +11,8 @@ import android.graphics.Path;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.view.View;
+
+import com.example.basicknowledge.R;
 
 public class DrawView extends View {
 

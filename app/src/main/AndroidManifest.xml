@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".mvp_login.ui.LoginActivity"></activity>
-        <activity android:name=".CanvasActivity" />
+        <activity android:name=".custom.CanvasActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,20 +1,17 @@
 package com.example.basicknowledge;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
-
 import com.example.basicknowledge.base.BaseActivity;
+import com.example.basicknowledge.custom.CanvasActivity;
 import com.example.basicknowledge.mvp_login.ui.LoginActivity;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -66,7 +63,7 @@ public class MainActivity extends BaseActivity {
             public void setOnItemClickListener(View view, String str) {
                 switch (str){
                     case "CanvasActivity":
-                        startActivity(new Intent(MainActivity.this,CanvasActivity.class));
+                        startActivity(new Intent(MainActivity.this, CanvasActivity.class));
                         break;
                     case "LoginActivity":
                         startActivity(new Intent(MainActivity.this, LoginActivity.class));
